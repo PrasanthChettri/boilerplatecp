@@ -1,17 +1,12 @@
-from sys import argv
+#COMPILE THEM CODE
+#GIT GUD AT DSA
 from os import system
-from sh import show
 
 def main():
-    a = argv[1:]
-    if len(a)  == 1  : 
-        f = a[0] 
-    else : 
-        f = "this.cpp"
-    if(system("g++ -std=c++11 {}".format(f))):
+    if(system("g++ -std=c++11 this.cpp")):
         exit()
     print("compiled")
-    show()
+    system("a.exe")
 
 if __name__ == "__main__" : 
     main()
